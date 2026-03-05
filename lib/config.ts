@@ -17,8 +17,8 @@ export const siteConfig = {
     "Felipe Santos TI",
   ],
   author: "Felipe Santos",
-  whatsapp: "5500000000000", // substitua pelo número real
-  email: "contato@felipesantos.ti",
+  whatsapp: "71985198467",
+  email: "lipess01@hotmail.com",
 };
 
 export type SiteConfig = typeof siteConfig;

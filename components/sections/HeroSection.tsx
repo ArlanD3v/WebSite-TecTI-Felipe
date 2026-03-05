@@ -130,11 +130,11 @@ export function HeroSection() {
             transition={{ delay: 0.6, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="font-display font-bold text-5xl md:text-7xl xl:text-8xl leading-[0.95] tracking-tight mb-6"
           >
-            <span className="block text-white">SUPORTE</span>
-            <span className="block text-white">T.I. QUE</span>
+            <span className="block text-white">CONECTANDO</span>
+            <span className="block text-white">VOCÊ À</span>
             <span className="block relative">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-cyan-300 to-sky-400 glow-cyan">
-                FUNCIONA
+                À SOLUÇÃO CERTA
               </span>
               <motion.span
                 initial={{ scaleX: 0 }}
@@ -166,7 +166,7 @@ export function HeroSection() {
               href={`https://wa.me/${siteConfig.whatsapp}?text=Olá, gostaria de um orçamento!`}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative px-8 py-4 bg-cyan-400 text-void font-display font-bold tracking-widest text-sm overflow-hidden hover:shadow-cyan-glow transition-all duration-300"
+              className="group relative px-8 py-4 bg-cyan-400 text-[#040810] font-display font-bold tracking-widest text-sm overflow-hidden hover:shadow-cyan-glow transition-all duration-300"
             >
               <span className="relative z-10">SOLICITAR ORÇAMENTO</span>
               <div className="absolute inset-0 bg-white translate-x-[-110%] group-hover:translate-x-0 transition-transform duration-300 opacity-10" />

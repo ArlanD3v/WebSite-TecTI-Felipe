@@ -3,7 +3,6 @@ import { Footer } from "@/components/layout/Footer";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { StatsSection } from "@/components/sections/StatsSection";
 import { ServicesSection } from "@/components/sections/ServicesSection";
-import { PriceTableSection } from "@/components/sections/PriceTableSection";
 import { AboutSection } from "@/components/sections/AboutSection";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { siteConfig } from "@/lib/config";
@@ -66,7 +65,6 @@ export default function HomePage() {
           <HeroSection />
           <StatsSection />
           <ServicesSection />
-          <PriceTableSection />
           <AboutSection />
           <ContactSection />
         </main>

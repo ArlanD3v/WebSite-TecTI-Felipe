@@ -85,7 +85,7 @@ export function Navbar() {
               href={`https://wa.me/${siteConfig.whatsapp}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-4 px-5 py-2 bg-cyan-400 text-void font-display font-bold text-sm tracking-widest hover:bg-cyan-300 transition-all hover:shadow-cyan-glow"
+              className="ml-4 px-5 py-2 bg-cyan-400 text-[#040810] font-display font-bold text-sm tracking-widest hover:bg-cyan-300 transition-all hover:shadow-cyan-glow"
             >
               CONTATO
             </a>
