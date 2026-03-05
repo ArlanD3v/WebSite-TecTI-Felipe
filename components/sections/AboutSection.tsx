@@ -83,12 +83,12 @@ export function AboutSection() {
 
               <p className="font-body text-sm text-slate-500 leading-relaxed">
                 Acredito que a tecnologia existe para facilitar a vida das pessoas, e não para gerar dúvidas ou
-                complicações. Por isso, explico cada etapa do serviço de forma clara e objetiva — você entende
+                complicações. Por isso, explico cada etapa do serviço de forma clara e objetiva, você entende
                 exatamente o que está sendo feito e o motivo de cada procedimento.
               </p>
 
               <p className="font-body text-sm text-slate-400 leading-relaxed font-medium">
-                Se você busca um profissional sério, acessível e comprometido com resultados, será um prazer atender você.
+                Se você busca um profissional sério, acessível e comprometido com resultados, será um prazer resolver o seu problema.
               </p>
             </div>
 
