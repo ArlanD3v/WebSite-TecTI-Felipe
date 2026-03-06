@@ -134,7 +134,7 @@ export function HeroSection() {
             <span className="block text-white">VOCÊ À</span>
             <span className="block relative">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-cyan-300 to-sky-400 glow-cyan">
-                À SOLUÇÃO CERTA
+               SOLUÇÃO CERTA
               </span>
               <motion.span
                 initial={{ scaleX: 0 }}
@@ -172,7 +172,7 @@ export function HeroSection() {
               <div className="absolute inset-0 bg-white translate-x-[-110%] group-hover:translate-x-0 transition-transform duration-300 opacity-10" />
             </a>
             <a
-              href="#tabela"
+              href="#servicos"
               className="px-8 py-4 border border-border text-slate-400 font-display font-semibold tracking-widest text-sm hover:border-cyan-400/50 hover:text-cyan-400 transition-all duration-300"
             >
               VER PREÇOS

@@ -132,6 +132,48 @@ export const services: Service[] = [
     category: "remote",
     duration: "Variável",
   },
+  {
+    id: "criacao-site-institucional",
+    name: "Criação de Site Institucional",
+    description: "Website, moderno e responsivo para apresentar sua empresa ou serviço profissionalmente na internet.",
+    price: 800,
+    category: "software",
+    duration: "Sob consulta",
+    popular: true,
+  },
+  {
+    id: "dominio-hospedagem",
+    name: "Registro de Domínio e Hospedagem",
+    description: "Registro do seu domínio (.com.br, .com etc.) e configuração completa do serviço de hospedagem.",
+    price: 150,
+    category: "software",
+    duration: "1–2h",
+  },
+  {
+    id: "backup-nuvem",
+    name: "Backup e Organização em Nuvem",
+    description: "Configuração de backup no Google Drive ou OneDrive, organização de pastas e sincronização automática.",
+    price: 120,
+    category: "remote",
+    duration: "1–2h",
+  },
+  {
+    id: "email-profissional",
+    name: "Configuração de E-mail Profissional",
+    description: "Configuração completa no computador e celular, com sincronização, assinatura personalizada e organização básica.",
+    price: 80,
+    category: "network",
+    duration: "30–60min",
+  },
+  {
+    id: "upgrade-ssd",
+    name: "Upgrade de SSD",
+    description: "Instalação de SSD com clonagem do sistema atual ou instalação limpa. SSD não incluso.",
+    price: 120,
+    priceNote: "mão de obra",
+    category: "hardware",
+    duration: "1–2h",
+  },
 ];
 
 export const stats = [

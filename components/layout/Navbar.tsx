@@ -8,8 +8,7 @@ import { siteConfig } from "@/lib/config";
 
 const navLinks = [
   { label: "Serviços", href: "#servicos" },
-  { label: "Tabela", href: "#tabela" },
-  { label: "Sobre", href: "#sobre" },
+   { label: "Sobre", href: "#sobre" },
   { label: "Contato", href: "#contato" },
 ];
 
