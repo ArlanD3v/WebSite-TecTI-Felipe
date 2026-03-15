@@ -11,12 +11,12 @@ export function Footer() {
             <Terminal size={11} className="relative text-cyan-400" />
           </div>
           <span className="font-display font-bold text-sm tracking-widest text-slate-400">
-            FELIPE<span className="text-cyan-400">.</span>TI
+            FELIPE<span className="text-cyan-400">.</span>TECH
           </span>
         </div>
 
         <p className="font-mono text-xs text-slate-700 tracking-wider">
-          © {new Date().getFullYear()} Felipe Santos Serviços de T.I. — Todos os direitos reservados.
+          © {new Date().getFullYear()} Felipe Santos Serviços de T.I.  • Todos os direitos reservados.
         </p>
 
         <div className="flex gap-6">

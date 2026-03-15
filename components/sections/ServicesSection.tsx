@@ -13,12 +13,12 @@ function PriceTag({ price, note }: { price: number | string; note?: string }) {
   }
   return (
     <div className="flex items-baseline gap-1 flex-wrap">
-      <span className="font-mono text-[10px] text-slate-500">a partir de</span>
-      <span className="font-mono text-xs text-emerald-400/60">R$</span>
+      <span className="font-mono text-[10px] text-slate-300">a partir de</span>
+      <span className="font-mono text-xs text-emerald-400/80">R$</span>
       <span className="font-display font-bold text-xl text-emerald-400">
         {price.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}
       </span>
-      {note && <span className="font-mono text-[10px] text-slate-500">/{note}</span>}
+      {note && <span className="font-mono text-[10px] text-slate-300">/{note}</span>}
     </div>
   );
 }
@@ -49,7 +49,7 @@ function ServiceCard({ service, index }: { service: Service; index: number }) {
           <div className="flex items-start justify-between gap-3">
             <CategoryBadge category={service.category} />
             {service.duration && (
-              <div className="flex items-center gap-1 font-mono text-[10px] text-slate-600 shrink-0">
+              <div className="flex items-center gap-1 font-mono text-[10px] text-slate-300 shrink-0">
                 <Clock size={10} />
                 {service.duration}
               </div>
@@ -60,7 +60,7 @@ function ServiceCard({ service, index }: { service: Service; index: number }) {
             <h3 className="font-display font-bold text-lg text-white group-hover:text-cyan-100 transition-colors leading-tight mb-2">
               {service.name}
             </h3>
-            <p className="font-body text-sm text-slate-500 leading-relaxed">
+            <p className="font-body text-sm text-slate-400 leading-relaxed">
               {service.description}
             </p>
           </div>

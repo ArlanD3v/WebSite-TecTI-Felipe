@@ -59,7 +59,7 @@ export function ContactSection() {
           </h2>
           <p className="font-body text-slate-500 text-lg max-w-lg mx-auto leading-relaxed">
             Entre em contato agora. Diagnóstico gratuito, atendimento rápido e
-            preço justo — garantido.
+            preço justo garantido.
           </p>
         </motion.div>
 
@@ -110,7 +110,7 @@ export function ContactSection() {
         >
           <div className="w-2 h-2 rounded-full bg-emerald-400 pulse-ring" />
           <span className="font-mono text-xs text-slate-500 tracking-widest">
-            ATENDIMENTO SEG–SAB, 8H–20H · EMERGÊNCIAS 24/7
+            ATENDIMENTO SEG a SEX 8H–20H, SAB 8H–12H · EMERGÊNCIAS 24/7
           </span>
         </motion.div>
       </div>

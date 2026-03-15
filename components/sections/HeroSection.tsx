@@ -45,7 +45,7 @@ export function HeroSection() {
 
       {/* Mouse-tracking radial gradient */}
       <div
-        className="absolute inset-0 transition-opacity duration-300"
+        className="absolute inset-0 transition-opacity duration-300 "
         style={{
           background: `radial-gradient(800px circle at ${mousePos.x * 100}% ${mousePos.y * 100}%, rgba(34,211,238,0.06), transparent 60%)`,
         }}
@@ -152,7 +152,7 @@ export function HeroSection() {
             className="font-body text-slate-400 text-lg md:text-xl max-w-xl leading-relaxed mt-8 mb-12"
           >
             Formatação, manutenção, redes e segurança. Atendimento rápido com
-            preços transparentes — sem surpresas.
+            preços transparentes, sem surpresas.
           </motion.p>
 
           {/* CTAs */}
@@ -160,7 +160,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.1, duration: 0.6 }}
-            className="flex flex-col sm:flex-row gap-4 items-start"
+            className="flex flex-col sm:flex-row gap-4 justify-center items-start"
           >
             <a
               href={`https://wa.me/${siteConfig.whatsapp}?text=Olá, gostaria de um orçamento!`}
@@ -168,7 +168,7 @@ export function HeroSection() {
               rel="noopener noreferrer"
               className="group relative px-8 py-4 bg-cyan-400 text-[#040810] font-display font-bold tracking-widest text-sm overflow-hidden hover:shadow-cyan-glow transition-all duration-300"
             >
-              <span className="relative z-10">SOLICITAR ORÇAMENTO</span>
+              <span className="relative z-10 ">SOLICITAR ORÇAMENTO</span>
               <div className="absolute inset-0 bg-white translate-x-[-110%] group-hover:translate-x-0 transition-transform duration-300 opacity-10" />
             </a>
             <a

@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Felipe Santos T.I.",
-  title: "Felipe Santos | Serviços de T.I. — Suporte e Manutenção Profissional",
+  title: "Felipe Santos | Serviços de T.I • Suporte e Manutenção Profissional",
   description:
     "Serviços profissionais de tecnologia da informação: formatação, manutenção, suporte remoto, redes e muito mais. Atendimento rápido e preços transparentes.",
   url: "https://felipesantos.ti",

@@ -55,7 +55,7 @@ export function Navbar() {
             </div>
             <div>
               <span className="font-display font-bold text-lg tracking-wider text-white">
-                FELIPE<span className="text-cyan-400">.</span>TI
+                FELIPE<span className="text-cyan-400">.</span>TECH
               </span>
             </div>
           </a>
