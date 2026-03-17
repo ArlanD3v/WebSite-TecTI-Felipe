@@ -17,7 +17,7 @@ export const siteConfig = {
     "Felipe Santos TI",
   ],
   author: "Felipe Santos",
-  whatsapp: "71985198467",
+  whatsapp: "71984047776",
   email: "lipess01@hotmail.com",
 };
 
