@@ -19,12 +19,20 @@ export function Footer() {
           © {new Date().getFullYear()} Felipe Santos Serviços de T.I.  • Todos os direitos reservados.
         </p>
 
-        <div className="flex gap-6">
+        <div className="flex flex-col md:flex-row items-center gap-3 md:gap-6">
           <a
             href={`mailto:${siteConfig.email}`}
             className="font-mono text-xs text-slate-600 hover:text-cyan-400 transition-colors tracking-wider"
           >
             {siteConfig.email}
+          </a>
+          <a
+            href={siteConfig.addressUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-mono text-[10px] md:text-xs text-slate-600 hover:text-cyan-400 transition-colors tracking-wider text-center md:text-right max-w-[280px] md:max-w-none"
+          >
+            {siteConfig.address} ({siteConfig.addressComplement})
           </a>
         </div>
       </div>
