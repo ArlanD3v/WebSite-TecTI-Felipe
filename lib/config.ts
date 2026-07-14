@@ -18,7 +18,7 @@ export const siteConfig = {
   ],
   author: "Felipe Santos",
   whatsapp: "71984047776",
-  email: "lipess01@hotmail.com",
+  email: "felipesantostech@icloud.com",
   address: "R. dos Bandeirantes, 100 - Matatu, Salvador - BA, 40260-000",
   addressComplement: "Matatu Shopping de Conveniência",
   addressUrl: "https://maps.google.com/?q=Rua+dos+Bandeirantes,+100+-+Matatu,+Salvador+-+BA,+40260-000",
