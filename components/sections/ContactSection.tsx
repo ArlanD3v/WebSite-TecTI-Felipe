@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MessageCircle, Mail, Phone, ExternalLink } from "lucide-react";
+import { MessageCircle, Mail, MapPin, ExternalLink } from "lucide-react";
 import { siteConfig } from "@/lib/config";
 
 const contactOptions = [
@@ -26,6 +26,18 @@ const contactOptions = [
     borderColor: "rgba(34,211,238,0.25)",
     accent: "bg-cyan-400",
     external: false,
+  },
+  {
+    icon: MapPin,
+    label: "Endereço",
+    value: siteConfig.address,
+    complement: siteConfig.addressComplement,
+    href: siteConfig.addressUrl,
+    color: "text-amber-400",
+    glowColor: "rgba(245,158,11,0.15)",
+    borderColor: "rgba(245,158,11,0.25)",
+    accent: "bg-amber-400",
+    external: true,
   },
 ];
 
@@ -64,8 +76,8 @@ export function ContactSection() {
         </motion.div>
 
         {/* Contact cards */}
-        <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto mb-12">
-          {contactOptions.map(({ icon: Icon, label, value, href, color, glowColor, borderColor, accent, external }, i) => (
+        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-12">
+          {contactOptions.map(({ icon: Icon, label, value, complement, href, color, glowColor, borderColor, accent, external }, i) => (
             <motion.a
               key={label}
               href={href}
@@ -85,13 +97,18 @@ export function ContactSection() {
               <div className={`${color} transition-transform group-hover:scale-110 duration-300`}>
                 <Icon size={28} />
               </div>
-              <div>
+              <div className="flex flex-col items-center text-center">
                 <div className="font-mono text-xs text-slate-600 tracking-widest mb-1">
                   {label.toUpperCase()}
                 </div>
-                <div className={`font-display font-bold text-lg ${color}`}>
+                <div className={`font-display font-bold text-base ${color} leading-snug`}>
                   {value}
                 </div>
+                {complement && (
+                  <div className="font-mono text-[10px] text-slate-500 mt-2 uppercase tracking-wider">
+                    {complement}
+                  </div>
+                )}
               </div>
               {external && (
                 <ExternalLink size={12} className={`${color} opacity-40`} />
