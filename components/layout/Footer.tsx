@@ -1,5 +1,6 @@
 import { Terminal } from "lucide-react";
 import { siteConfig } from "@/lib/config";
+import { LimoncodeFooterBadge } from "../ui/LimoncodeFooterBadge";
 
 export function Footer() {
   return (
@@ -27,6 +28,7 @@ export function Footer() {
             {siteConfig.email}
           </a>
         </div>
+           <LimoncodeFooterBadge />
       </div>
     </footer>
   );
