@@ -2,29 +2,12 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Clock, Star, X, MessageCircle } from "lucide-react";
+import { Clock, Star, MessageCircle } from "lucide-react";
 import { services, type Service, type ServiceCategory, categoryMeta } from "@/lib/services";
 import { CategoryBadge } from "@/components/ui/CategoryBadge";
 import { siteConfig } from "@/lib/config";
 
-function PriceTag({ price, note }: { price: number | string; note?: string }) {
-  if (typeof price === "string") {
-    return <div className="font-mono text-amber-400 text-base font-medium">{price}</div>;
-  }
-  return (
-    <div className="flex items-baseline gap-1 flex-wrap">
-      <span className="font-mono text-[10px] text-slate-300">a partir de</span>
-      <span className="font-mono text-xs text-emerald-400/80">R$</span>
-      <span className="font-display font-bold text-xl text-emerald-400">
-        {price.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}
-      </span>
-      {note && <span className="font-mono text-[10px] text-slate-300">/{note}</span>}
-    </div>
-  );
-}
-
 function ServiceCard({ service, index }: { service: Service; index: number }) {
-  const [selected, setSelected] = useState(false);
   const waMessage = encodeURIComponent(`Olá! Gostaria de um orçamento para: ${service.name}`);
 
   return (
@@ -65,9 +48,7 @@ function ServiceCard({ service, index }: { service: Service; index: number }) {
             </p>
           </div>
 
-          <div className="pt-4 border-t border-border space-y-3">
-            <PriceTag price={service.price} note={service.priceNote} />
-
+          <div className="pt-4 border-t border-border">
             {/* Botão orçamento */}
             <a
               href={`https://wa.me/${siteConfig.whatsapp}?text=${waMessage}`}
@@ -169,7 +150,7 @@ export function ServicesSection() {
           viewport={{ once: true }}
           className="mt-8 text-center font-mono text-xs text-slate-600 tracking-wider"
         >
-          * Valores são estimativas. O orçamento final é confirmado após diagnóstico gratuito.
+          * O orçamento é confirmado após diagnóstico gratuito.
         </motion.p>
       </div>
     </section>

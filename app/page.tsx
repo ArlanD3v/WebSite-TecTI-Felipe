@@ -20,7 +20,6 @@ const jsonLd = {
   email: siteConfig.email,
   "@id": `${siteConfig.url}/#localbusiness`,
   sameAs: [`https://wa.me/${siteConfig.whatsapp}`],
-  priceRange: "R$50–R$200",
   address: {
     "@type": "PostalAddress",
     streetAddress: "R. dos Bandeirantes, 100",
@@ -67,20 +66,14 @@ const jsonLd = {
       {
         "@type": "Offer",
         name: "Formatação Completa",
-        price: "120",
-        priceCurrency: "BRL",
       },
       {
         "@type": "Offer",
         name: "Suporte Remoto",
-        price: "60",
-        priceCurrency: "BRL",
       },
       {
         "@type": "Offer",
         name: "Remoção de Vírus",
-        price: "80",
-        priceCurrency: "BRL",
       },
     ],
   },
